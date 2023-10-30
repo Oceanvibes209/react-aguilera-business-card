@@ -1,38 +1,48 @@
-.App {
+body {
+  background-image: url(./images/code-background-image.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-card {
+  padding-top: 10px;
+  max-height: 100vh; /* Set a maximum height equal to the viewport height */
+  max-width: 90%;
+}
+
+#info-card h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card:hover {
+  box-shadow: 0px 0px 40px 8px rgba(73, 192, 230, 1);
+  transition: box-shadow 0.3s ease-in-out; /* Add a transition for a smooth hover effect */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#logo {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#icon{
   display: flex;
-  flex-direction: column;
+  justify-content:center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-direction: row;
+  gap:50px; /*Adds space between the icons!*/
 }
